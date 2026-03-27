@@ -8,81 +8,6 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -102,21 +27,234 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "ai-tools/cursor",
+                  "ai-tools/claude-code",
+                  "ai-tools/windsurf"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "JS API",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "en/JSAPI/overview"
+                ]
+              },
+              {
+                "group": "Events",
+                "pages": [
+                  "en/JSAPI/events/overview",
+                  "en/JSAPI/events/best-practices-for-registering-event-handlers",
+                  {
+                    "group": "Record List Events",
+                    "pages": [
+                      "en/JSAPI/events/record-list-events/overview",
+                      "en/JSAPI/events/record-list-events/onload-event",
+                      "en/JSAPI/events/record-list-events/inline-edit-event",
+                      "en/JSAPI/events/record-list-events/save-event",
+                      "en/JSAPI/events/record-list-events/save-success-event",
+                      "en/JSAPI/events/record-list-events/field-change-event",
+                      "en/JSAPI/events/record-list-events/delete-event"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "REST API",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "en/REST/overview"
+                ]
+              },
+              {
+                "group": "Plugins",
+                "pages": [
+                  "en/REST/plugins/overview",
+                  "en/REST/plugins/get-plugins",
+                  "en/REST/plugins/get-required-plugins",
+                  "en/REST/plugins/add-plugin",
+                  "en/REST/plugins/update-plugin",
+                  "en/REST/plugins/delete-plugin",
+                  "en/REST/plugins/get-plugin-apps"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API reference",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "ja",
+        "tabs": [
+          {
+            "tab": "JS API",
+            "groups": [
+              {
+                "group": "概要",
+                "pages": [
+                  "ja/JSAPI/overview"
+                ]
+              },
+              {
+                "group": "イベント",
+                "pages": [
+                  "ja/JSAPI/events/overview",
+                  "ja/JSAPI/events/event-handling",
+                  "ja/JSAPI/events/event-object-actions",
+                  "ja/JSAPI/events/graph-show-event",
+                  "ja/JSAPI/events/portal-show-event",
+                  "ja/JSAPI/events/print-show-event",
+                  "ja/JSAPI/events/space-show-event",
+                  {
+                    "group": "一覧画面イベント",
+                    "pages": [
+                      "ja/JSAPI/events/idx/overview",
+                      "ja/JSAPI/events/idx/index-show-event",
+                      "ja/JSAPI/events/idx/index-edit-show-event",
+                      "ja/JSAPI/events/idx/index-edit-change-event",
+                      "ja/JSAPI/events/idx/index-edit-submit-event",
+                      "ja/JSAPI/events/idx/index-edit-submit-success-event",
+                      "ja/JSAPI/events/idx/index-delete-submit-event"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "kintone API",
+                "pages": [
+                  "ja/JSAPI/kintone/overview",
+                  "ja/JSAPI/kintone/get-login-user",
+                  "ja/JSAPI/kintone/get-groups",
+                  "ja/JSAPI/kintone/get-organizations",
+                  "ja/JSAPI/kintone/get-custom-fields",
+                  "ja/JSAPI/kintone/get-design",
+                  "ja/JSAPI/kintone/get-domains",
+                  "ja/JSAPI/kintone/get-keyboard-shortcuts",
+                  "ja/JSAPI/kintone/get-available-api-types",
+                  "ja/JSAPI/kintone/get-available-services",
+                  "ja/JSAPI/kintone/create-dialog",
+                  "ja/JSAPI/kintone/build-page-url"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "REST API",
+            "groups": [
+              {
+                "group": "概要",
+                "pages": [
+                  "ja/REST/overview"
+                ]
+              },
+              {
+                "group": "プラグイン",
+                "pages": [
+                  "ja/REST/plugins/overview",
+                  "ja/REST/plugins/get-plugins",
+                  "ja/REST/plugins/get-required-plugins",
+                  "ja/REST/plugins/add-plugin",
+                  "ja/REST/plugins/update-plugin",
+                  "ja/REST/plugins/delete-plugin",
+                  "ja/REST/plugins/get-plugin-apps"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
+      ]
     }
   }
 }
