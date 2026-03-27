@@ -12,7 +12,6 @@ aliases:
 
 グラフ画面を表示したときに発生するイベントです。
 
-{{ toc }}
 
 | | イベントタイプ | イベントが発生するタイミング |
 | :-- | :-- | :-- |
@@ -23,7 +22,7 @@ aliases:
 
 | プロパティ名 | 型 | 説明 |
 | :-- | :-- | :-- |
-| type | 文字列 | イベントタイプ<br>次の値が返ります。<ul><li>PC：`app.report.show`</li><li>モバイル：`mobile.app.report.show`</li></ul> |
+| type | 文字列 | イベントタイプ<br />次の値が返ります。<ul><li>PC：`app.report.show`</li><li>モバイル：`mobile.app.report.show`</li></ul> |
 | appId | 数値 | アプリID |
 
 ### イベントオブジェクトで実行できる操作 {#available-event-object-actions}

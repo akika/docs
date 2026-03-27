@@ -13,7 +13,7 @@ aliases:
 
 An event triggered after the record list page is displayed on desktop.
 
-{{< image alt="Record List Event(Desktop)" src="record-list-event-desktop.png" width="600" height="309" >}}
+![Record List Event(Desktop)](./onload-event/record-list-event-desktop.png)
 
 #### Function {#onload-desktop-function}
 
@@ -21,7 +21,7 @@ An event triggered after the record list page is displayed on desktop.
 
 #### Sample {#onload-desktop-sample}
 
-<!-- eslint-disable strict -->
+
 ```js
 kintone.events.on('app.record.index.show', function(event) {
   console.log(event);
@@ -46,12 +46,12 @@ kintone.events.on('app.record.index.show', function(event) {
 
 | PROPERTY | TYPE | DESCRIPTION |
 | :-- | :-- | :-- |
-| type | String | The event type.<br>Returns `app.record.index.show`. |
+| type | String | The event type.<br />Returns `app.record.index.show`. |
 | appId | Number | The App ID. |
 | viewId | Number | The View ID of the record list. |
 | viewName | String | The View Name of the record list. |
 | viewType | String | The type of the record list. Possible values are `list`, `calendar`, or `custom`. |
-| records | Array or Object | Differs depending on the `viewType`:<ul><li>`list`: An array of record objects</li><li>`calendar`: An object including the date string as the key, and an array of record objects as the value<br>A `calendar` example:<pre>{<br>  "2015-04-01": [record1, record2],<br>  "2015-04-20": [record1]<br>}</pre></li><li>`custom` with pagination enabled: An array of record objects</li><li>`custom` with pagination disabled: An empty array</li></ul> |
+| records | Array or Object | Differs depending on the `viewType`:<ul><li>`list`: An array of record objects</li><li>`calendar`: An object including the date string as the key, and an array of record objects as the value<br />A `calendar` example:<pre>\{<br />  "2015-04-01": [record1, record2],<br />  "2015-04-20": [record1]<br />\}</pre></li><li>`custom` with pagination enabled: An array of record objects</li><li>`custom` with pagination disabled: An empty array</li></ul> |
 | date | String | Differs depending on the `viewType`:<ul><li>`calendar`: The month shown in the `calendar` view. April 2015 will be `2015-04`</li><li>All others: `null`</li></ul> |
 | offset | Number | Differs depending on the `viewType`:<ul><li>`list`: The offset of the list</li><li>`calendar`: `null`</li><li>`custom` with pagination enabled: The offset of the list</li><li>`custom` with pagination disabled: `0`</li></ul> |
 | size | Number | Differs depending on the `viewType`:<ul><li>`list`: The number of records in the list</li><li>`calendar`: `null`</li><li>`custom` with pagination enabled: The number of records in the list</li><li>`custom` with pagination disabled: `0`</li></ul> |
@@ -64,7 +64,7 @@ By returning a `Promise` object in the event handler, the next operations can be
 
 An event triggered after the record list page is displayed on mobile.
 
-{{< image alt="Record List Event(Mobile)" src="record-list-event-mobile.png" width="189" height="300" >}}
+![Record List Event(Mobile)](./onload-event/record-list-event-mobile.png)
 
 #### Function {#onload-mobile-function}
 
@@ -86,7 +86,7 @@ An event triggered after the record list page is displayed on mobile.
 
 | PROPERTY | TYPE | DESCRIPTION |
 | :-- | :-- | :-- |
-| type | String | The event type.<br>Returns `mobile.app.record.index.show`. |
+| type | String | The event type.<br />Returns `mobile.app.record.index.show`. |
 | appId | Number | The App ID. |
 | viewId | Number | The View ID of the record list. |
 | viewName | String | The View Name of the record list. |

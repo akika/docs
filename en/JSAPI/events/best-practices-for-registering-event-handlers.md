@@ -52,7 +52,7 @@ In order to reliably handle these onload events, register the event handlers syn
 
 If the registration of the event handler using kintone.events.on() is not processed synchronously when the customization JavaScript at timing 3 is loaded, the following warning may be displayed in the browser's developer console (* 4).
 
-{{< image alt="Screenshot: Warnings displayed in the console." src="warning.png" width="833" height="125" >}}
+![Screenshot: Warnings displayed in the console.](./best-practices-for-registering-event-handlers/warning.png)
 
 If this warning is displayed, please correct the registration timing of the event handler in your code by referring to the example in this article.
 
@@ -64,9 +64,9 @@ If this warning is displayed, please correct the registration timing of the even
 
 ##### Bad examples {#jquery-bad-examples}
 
-One common way of using jQuery is to write the entire script wrapped with **$(function() {...});**
+One common way of using jQuery is to write the entire script wrapped with **$(function() \{...\});**
 
-<!-- eslint-disable strict -->
+
 ```js
 $(function() {
   kintone.events.on('app.record.create.show', function(event) {
@@ -77,7 +77,7 @@ $(function() {
 
 This is equivalent to processing the **...** part of the script in the event handler of the **DOMContentLoaded** event.
 
-<!-- eslint-disable strict -->
+
 ```js
 document.addEventListener('DOMContentLoaded', function(loadedEvent) {
   kintone.events.on('app.record.create.show', function(event) {
@@ -92,7 +92,7 @@ As mentioned earlier, the **DOMContentLoaded** event is processed _after_ the in
 
 Wrap the script in an anonymous function and pass in jQuery to be mapped to $.
 
-<!-- eslint-disable strict -->
+
 ```js
 (function($) {
   'use strict';
@@ -103,9 +103,9 @@ Wrap the script in an anonymous function and pass in jQuery to be mapped to $.
 })(jQuery);
 ```
 
-There may be cases where you would want to start processing your script after the **DOMContentLoaded** event is triggered. In this case, separate (1) the event handler registration via kintone.events.on(), and (2) the process wrapped with **$(function() {...};** .
+There may be cases where you would want to start processing your script after the **DOMContentLoaded** event is triggered. In this case, separate (1) the event handler registration via kintone.events.on(), and (2) the process wrapped with **$(function() \{...\};** .
 
-<!-- eslint-disable strict -->
+
 ```js
 (function($) {
   'use strict';
@@ -129,7 +129,7 @@ Even when not using jQuery, make sure to register event handlers of the Kintone 
 
 - Registering the event handler for `app.record.create.show` in the event handler of the **DOMContentLoaded** event.
 
-<!-- eslint-disable strict -->
+
   ```js
   (function() {
     'use strict';
@@ -144,8 +144,8 @@ Even when not using jQuery, make sure to register event handlers of the Kintone 
 
 - Registering the event handler for `app.record.create.show` in the event handler of the **load** event.
 
-  <!-- eslint-disable no-undef -->
-  <!-- eslint-disable strict -->
+  
+  
   ```js
   (function() {
     'use strict';
@@ -160,8 +160,8 @@ Even when not using jQuery, make sure to register event handlers of the Kintone 
 
 - Registering the event handler for `app.record.create.show` in the callback of an asynchronous request or process.
 
-  <!-- eslint-disable no-undef -->
-  <!-- eslint-disable strict -->
+  
+  
   ```js
   (function() {
     'use strict';
@@ -176,7 +176,7 @@ Even when not using jQuery, make sure to register event handlers of the Kintone 
 
 ##### Good example {#common-javascript-good-example}
 
-<!-- eslint-disable strict -->
+
 ```js
 (function() {
   'use strict';

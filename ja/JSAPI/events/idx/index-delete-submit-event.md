@@ -12,7 +12,6 @@ aliases:
 
 レコード一覧画面で【削除】をクリックしてポップアップの【削除する】をクリックした後、サーバーへ保存する前に発生するイベントです。
 
-{{ toc }}
 
 | | イベントタイプ | イベントが発生するタイミング |
 | :-- | :-- | :-- |
@@ -23,10 +22,10 @@ aliases:
 
 | プロパティ名 | 型 | 説明 |
 | :-- | :-- | :-- |
-| type | 文字列 | イベントタイプ<br>`app.record.index.delete.submit`が返ります。 |
+| type | 文字列 | イベントタイプ<br />`app.record.index.delete.submit`が返ります。 |
 | appId | 数値 | アプリID |
 | recordId | 数値 | レコードID |
-| record | オブジェクト | 削除するレコードのデータ<br>詳細は次のページを参照してください。<br>[フィールド形式](/id/2736678ef8d2aad09a33e8bb/) |
+| record | オブジェクト | 削除するレコードのデータ<br />詳細は次のページを参照してください。<br />[フィールド形式](/id/2736678ef8d2aad09a33e8bb/) |
 
 ### 削除処理をキャンセルする {#available-event-object-actions-cancel-delete}
 

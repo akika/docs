@@ -10,14 +10,11 @@ aliases:
 
 Gets the list of plug-ins imported into Kintone.
 
-{{< vtable >}}
 | Method | GET |
 | URL | https://{subdomain}.kintone.com/k/v1/plugins.json |
 | Authentication | [Password Authentication](/docs/common/authentication/#password-authentication), [Session Authentication](/docs/common/authentication/#session-authentication) |
 | Content-Type | application/json (not needed if specifying the query with a query string) |
-{{< /vtable >}}
 
-{{ toc }}
 
 ### Permissions {#permissions}
 
@@ -27,9 +24,9 @@ Gets the list of plug-ins imported into Kintone.
 
 | Parameter | Type | Required | Description |
 | :-- | :-- | :-- | :-- |
-| offset | Integer |  | The number of plug-ins to skip from the list of installed plug-ins.<br>If ignored, this value is 0. |
-| limit | Integer |  | The maximum number of plug-ins to retrieve.<br>Must be between 1 and 100.<br>The default number is 100. |
-| ids | Array of strings |  | The plug-in ids. The maximum limit of ids that can be specified is 100.<br>If `null` or an empty array is specified, this parameter will be ignored, and a list of plug-ins will be returned. |
+| offset | Integer |  | The number of plug-ins to skip from the list of installed plug-ins.<br />If ignored, this value is 0. |
+| limit | Integer |  | The maximum number of plug-ins to retrieve.<br />Must be between 1 and 100.<br />The default number is 100. |
+| ids | Array of strings |  | The plug-in ids. The maximum limit of ids that can be specified is 100.<br />If `null` or an empty array is specified, this parameter will be ignored, and a list of plug-ins will be returned. |
 
 ### Sample Request {#sample-request}
 
@@ -37,7 +34,7 @@ Gets the list of plug-ins imported into Kintone.
 
 **Sample when the `ids` parameter is ignored**
 
-<!-- eslint-disable strict -->
+
 ```js
 var body = {
   'offset': 1,
@@ -54,7 +51,7 @@ kintone.api(kintone.api.url('/k/v1/plugins.json', true), 'GET', body, function(r
 
 **Sample when the `ids` parameter is specified**
 
-<!-- eslint-disable strict -->
+
 ```js
 var body = {
   'ids': ['nldmflmpgchoodanjholbdewsdjkhpban', 'jdkslfbeksonbmvkelsodkfyquxnsja']
@@ -95,7 +92,7 @@ curl -X GET 'https://{subdomain}.kintone.com/k/v1/plugins.json' \
 
 | Parameter | Type | Description |
 | :-- | :-- | :-- |
-| plugins | Array of Objects | A list of plug-ins added to the App.<br>Plug-ins are listed in descending order of the datetime they are added.|
+| plugins | Array of Objects | A list of plug-ins added to the App.<br />Plug-ins are listed in descending order of the datetime they are added.|
 | plugins[].id | String | The plug-in ID. |
 | plugins[].name | String | The name of the plug-in. |
 | plugins[].isMarketPlugin | Boolean | States whether or not the plug-in is a Marketplace plug-in.<ul><li>`true`: The plug-in is a Marketplace plug-in.</li><li>`false`: The plug-in is not a Marketplace plug-in.</li></ul> |
@@ -104,16 +101,7 @@ curl -X GET 'https://{subdomain}.kintone.com/k/v1/plugins.json' \
 
 ### Sample Response {#sample-response}
 
-```json
-{
-    "plugins": [
-        {
-          "id": "djmhffjhfgmebgnmcggopedaofckljlj",
-          "name": "Plugin 1",
-          "isMarketPlugin": false,
-          "version": "1",
-          "description": "Description of Plugin 1"
-        },
+```json,
         {
           "id":"ejgcopfamifdhmkafjgidfmgjdmiaplf",
           "name":"Plugin 2",

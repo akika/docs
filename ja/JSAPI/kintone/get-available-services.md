@@ -24,9 +24,9 @@ cybozu.comの他のサービスを利用可能かどうかを取得します。
 
 ##### PC／モバイル
 
-<!-- textlint-disable prh -->
+
 kintone.getAvailableServices()
-<!-- textlint-enable prh -->
+
 
 #### 引数{#parameters}
 
@@ -41,7 +41,7 @@ Promiseオブジェクトの解決時に次の値が取得できます。
 |:--|:--|:--|
 | garoon | 真偽値 | Garoonが利用可能かどうか<ul><li>`true`：利用できる</li><li>`false`：利用できない</li></ul> |
 | office | 真偽値 | サイボウズ Officeが利用可能かどうか<ul><li>`true`：利用できる</li><li>`false`：利用できない</li></ul> |
-| <!--textlint-disable prh -->mailwise<!--textlint-enable prh --> | 真偽値 | メールワイズが利用可能かどうか<ul><li>`true`：利用できる</li><li>`false`：利用できない</li></ul> |
+| mailwise | 真偽値 | メールワイズが利用可能かどうか<ul><li>`true`：利用できる</li><li>`false`：利用できない</li></ul> |
 
 #### 利用できる画面{#available-pages}
 

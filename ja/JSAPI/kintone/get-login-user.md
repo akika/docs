@@ -19,9 +19,9 @@ aliases:
 
 ##### PC／モバイル
 
-<!-- textlint-disable prh -->
+
 kintone.getLoginUser()
-<!-- textlint-enable prh -->
+
 
 #### 引数 {#parameters}
 
@@ -32,14 +32,14 @@ kintone.getLoginUser()
 | プロパティ名 | 型 | 値と説明 |
 | :-- | :-- | :-- |
 | id | 文字列 | システムが自動採番したユーザーID |
-| code | 文字列 | ログイン名<br>ゲストユーザーの場合は「Email」です。 |
-| name | 文字列 | 表示名<br>ゲストユーザーの場合は「名前」です。 |
+| code | 文字列 | ログイン名<br />ゲストユーザーの場合は「Email」です。 |
+| name | 文字列 | 表示名<br />ゲストユーザーの場合は「名前」です。 |
 | email | 文字列 | メールアドレス |
-| url | 文字列 | URL<br>ゲストユーザーの場合は空文字列です。 |
-| employeeNumber | 文字列 | 従業員ID<br> ゲストユーザーの場合は空文字列です。 |
+| url | 文字列 | URL<br />ゲストユーザーの場合は空文字列です。 |
+| employeeNumber | 文字列 | 従業員ID<br /> ゲストユーザーの場合は空文字列です。 |
 | phone | 文字列 | 電話番号 |
-| mobilePhone | 文字列 | 携帯番号<br>ゲストユーザーの場合は空文字列です。 |
-| extensionNumber | 文字列 | 内線番号<br>ゲストユーザーの場合は空文字列です。 |
+| mobilePhone | 文字列 | 携帯番号<br />ゲストユーザーの場合は空文字列です。 |
+| extensionNumber | 文字列 | 内線番号<br />ゲストユーザーの場合は空文字列です。 |
 | timezone | 文字列 | タイムゾーン |
 | isGuest | 真偽値 | ゲストユーザーかどうか<ul><li>`true`：ゲストユーザー</li><li>`false`：ゲストユーザーでない</li></ul> |
 | language | 文字列 | 言語とタイムゾーンで設定されたユーザーの言語<ul><li>`ja`：日本語</li><li>`en`：英語</li><li>`zh`：中国語（簡体字）</li><li> `zh-TW`：中国語（繁体字）</li><li>`es`：スペイン語</li><li>`pt-BR`：ポルトガル語（ブラジル）</li><li>`th`：タイ語</li></ul>その他の対応していないロケールは`en`が返ります。|

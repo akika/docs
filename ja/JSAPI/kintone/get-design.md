@@ -18,9 +18,9 @@ aliases:
 
 ##### PC／モバイル
 
-<!-- textlint-disable prh -->
+
 kintone.getUiVersion()
-<!-- textlint-enable prh -->
+
 
 #### 引数 {#parameters}
 

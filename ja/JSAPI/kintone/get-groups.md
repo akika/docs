@@ -26,15 +26,15 @@ aliases:
 
 ##### PC／モバイル
 
-<!-- textlint-disable prh -->
+
 kintone.user.getGroups(code)
-<!-- textlint-enable prh -->
+
 
 #### 引数 {#parameters}
 
 | 引数名 | 型 | 必須 | 説明 |
 |:--|:--|:--|:--|
-| code | 文字列 | 省略可 | 情報を取得するユーザーのログイン名<br>省略した場合はログインユーザーの情報を取得します。 |
+| code | 文字列 | 省略可 | 情報を取得するユーザーのログイン名<br />省略した場合はログインユーザーの情報を取得します。 |
 
 #### 戻り値 {#response}
 

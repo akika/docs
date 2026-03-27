@@ -32,7 +32,7 @@ None
 
 #### Sample showing the datetime the record was updated {#sample-showing-the-datetime-when-the-record-was-updated}
 
-<!-- eslint-disable strict -->
+
 ```js
 // Display the updated date time after saving.
 kintone.events.on('app.record.index.edit.submit.success', function(event) {

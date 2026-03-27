@@ -10,14 +10,11 @@ aliases:
 
 Updates an imported plug-in in the Kintone environment.
 
-{{< vtable >}}
 | Method | PUT |
 | URL | https://{subdomain}.kintone.com/k/v1/plugin.json |
 | Authentication | [Password Authentication](/docs/common/authentication/#password-authentication), [Session Authentication](/docs/common/authentication/#session-authentication) |
 | Content-Type | application/json |
-{{< /vtable >}}
 
-{{ toc }}
 
 ### Permissions {#permissions}
 
@@ -28,12 +25,12 @@ Updates an imported plug-in in the Kintone environment.
 | Parameter | Type | Required | Description |
 | :-- | :-- | :-- | :-- |
 | id | String | Yes | The ID of the plug-in to be updated. |
-| fileKey | String | Yes | The fileKey representing an uploaded file. Use the following API to upload the file and retrieve the fileKey:<br>[Upload File](/docs/kintone/rest-api/files/upload-file/) |
+| fileKey | String | Yes | The fileKey representing an uploaded file. Use the following API to upload the file and retrieve the fileKey:<br />[Upload File](/docs/kintone/rest-api/files/upload-file/) |
 
 ### Sample Request {#sample-request}
 
 #### [JavaScript using kintone.api()](/docs/kintone/js-api/api/kintone-rest-api-request/) {#javascript-using-kintone-api}
-<!-- eslint-disable strict -->
+
 ```js
 var body = {
   'id': 'djmhffjhfgmebgnmcggopedaofckljlj',
@@ -70,8 +67,4 @@ curl -X PUT 'https://{subdomain}.kintone.com/k/v1/plugin.json' \
 ### Sample Response {#sample-response}
 
 ```json
-{
-  "id": "djmhffjhfgmebgnmcggopedaofckljlj",
-  "version": "1.0.1"
-}
 ```

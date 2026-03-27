@@ -11,14 +11,11 @@ aliases:
 Gets the list of plug-ins that have been deleted from Kintone, but have already been added to Apps.  
 This can occur when a plug-in is installed, added to an App, and then proceeded to be uninstalled from the Kintone environment.
 
-{{< vtable >}}
 | Method | GET |
 | URL | https://{subdomain}.kintone.com/k/v1/plugins/required.json |
 | Authentication | [Password Authentication](/docs/common/authentication/#password-authentication), [Session Authentication](/docs/common/authentication/#session-authentication) |
 | Content-Type | application/json (not needed if specifying the query with a query string) |
-{{< /vtable >}}
 
-{{ toc }}
 
 ### Permissions {#permissions}
 
@@ -28,14 +25,14 @@ This can occur when a plug-in is installed, added to an App, and then proceeded 
 
 | Parameter | Type | Required | Description |
 | :-- | :-- | :-- | :-- |
-| offset | Integer |  | The number of plug-ins to skip from the list of required plug-ins.<br>If ignored, this value is 0. |
-| limit | Integer |  | The maximum number of plug-ins to retrieve.<br>Must be between 1 and 100.<br>The default number is 100. |
+| offset | Integer |  | The number of plug-ins to skip from the list of required plug-ins.<br />If ignored, this value is 0. |
+| limit | Integer |  | The maximum number of plug-ins to retrieve.<br />Must be between 1 and 100.<br />The default number is 100. |
 
 ### Sample Request {#sample-request}
 
 #### [JavaScript using kintone.api()](/docs/kintone/js-api/api/kintone-rest-api-request/) {#using-kintone-rest-api-request}
 
-<!-- eslint-disable strict -->
+
 ```js
 var body = {
   'offset': 1,
@@ -72,14 +69,7 @@ curl -X GET 'https://{subdomain}.kintone.com/k/v1/plugins/required.json' \
 
 ### Sample Response {#sample-response}
 
-```json
-{
-    "plugins": [
-        {
-          "id": "djmhffjhfgmebgnmcggopedaofckljlj",
-          "name":"Plugin 1",
-          "isMarketPlugin": false,
-        },
+```json,
         {
           "id":"ejgcopfamifdhmkafjgidfmgjdmiaplf",
           "name":"Plugin 2",

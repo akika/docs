@@ -24,9 +24,9 @@ aliases:
 
 ##### PC／モバイル
 
-<!-- textlint-disable prh -->
+
 kintone.getAvailableApiTypes()
-<!-- textlint-enable prh -->
+
 
 #### 引数{#parameters}
 

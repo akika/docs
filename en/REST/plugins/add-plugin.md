@@ -10,14 +10,11 @@ aliases:
 
 Imports a plug-in into Kintone.
 
-{{< vtable >}}
 | Method | POST |
 | URL | https://{subdomain}.kintone.com/k/v1/plugin.json |
 | Authentication | [Password Authentication](/docs/common/authentication/#password-authentication), [Session Authentication](/docs/common/authentication/#session-authentication) |
 | Content-Type | application/json |
-{{< /vtable >}}
 
-{{ toc }}
 
 ### Permissions {#permissions}
 
@@ -27,12 +24,12 @@ Imports a plug-in into Kintone.
 
 | Parameter | Type | Required | Description |
 | :-- | :-- | :-- | :-- |
-| fileKey | String | Yes | The fileKey representing an uploaded file. Use the following API to upload the file and retrieve the fileKey:<br>[Upload File](/docs/kintone/rest-api/files/upload-file/) |
+| fileKey | String | Yes | The fileKey representing an uploaded file. Use the following API to upload the file and retrieve the fileKey:<br />[Upload File](/docs/kintone/rest-api/files/upload-file/) |
 
 ### Sample Request {#sample-request}
 
 #### [JavaScript using kintone.api()](/docs/kintone/js-api/api/kintone-rest-api-request/) {#javascript-using-kintone-api}
-<!-- eslint-disable strict -->
+
 ```js
 var body = {
   'fileKey': 'c15b3870-7505-4ab6-9d8d-b9bdbc74f5d6'
@@ -68,8 +65,4 @@ curl -X POST 'https://{subdomain}.kintone.com/k/v1/plugin.json' \
 ### Sample Response {#sample-response}
 
 ```json
-{
-  "id": "djmhffjhfgmebgnmcggopedaofckljlj",
-  "version": "1.0.0"
-}
 ```

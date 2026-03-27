@@ -12,7 +12,6 @@ aliases:
 
 レコード一覧画面でインライン編集の【保存】をクリックした後、サーバーへ保存する前に発生するイベントです。
 
-{{ toc }}
 
 | | イベントタイプ | イベントが発生するタイミング |
 | :-- | :-- | :-- |
@@ -23,10 +22,10 @@ aliases:
 
 | プロパティ名 | 型 | 説明 |
 | :-- | :-- | :-- |
-| type | 文字列 | イベントタイプ<br>`app.record.index.edit.submit`が返ります。 |
+| type | 文字列 | イベントタイプ<br />`app.record.index.edit.submit`が返ります。 |
 | appId | 文字列 | アプリID |
 | recordId | 文字列 | レコードID |
-| record | オブジェクト | 保存するレコードのデータ<br>詳細は次のページを参照してください。<br>[フィールド形式](/id/2736678ef8d2aad09a33e8bb/) |
+| record | オブジェクト | 保存するレコードのデータ<br />詳細は次のページを参照してください。<br />[フィールド形式](/id/2736678ef8d2aad09a33e8bb/) |
 
 ### 保存処理をキャンセルする {#available-event-object-actions-cancel-save}
 

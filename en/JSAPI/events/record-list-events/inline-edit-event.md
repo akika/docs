@@ -13,7 +13,7 @@ aliases:
 
 An event triggered when an inline edit of a record starts on the record list page.
 
-{{< image alt="Record List Event" src="inline-edit-event.png" width="600" height="309" >}}
+![Record List Event](./inline-edit-event/inline-edit-event.png)
 
 #### Function {#function}
 

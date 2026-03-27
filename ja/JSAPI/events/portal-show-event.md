@@ -12,7 +12,6 @@ aliases:
 
 ポータル画面を表示したときに発生するイベントです。
 
-{{ toc }}
 
 | | イベントタイプ | イベントが発生するタイミング |
 | :-- | :-- | :-- |
@@ -23,7 +22,7 @@ aliases:
 
 | プロパティ名 | 型 | 説明 |
 | :-- | :-- | :-- |
-| type | 文字列 | イベントタイプ<br>次の値が返ります。<ul><li>PC：`portal.show`</li><li>モバイル：`mobile.portal.show`</li></ul> |
+| type | 文字列 | イベントタイプ<br />次の値が返ります。<ul><li>PC：`portal.show`</li><li>モバイル：`mobile.portal.show`</li></ul> |
 
 ### イベントオブジェクトで実行できる操作 {#available-event-object-actions}
 

@@ -13,7 +13,7 @@ aliases:
 
 An event triggered when the save button of the inline editing is clicked on the record list.
 
-{{< image alt="Save Event" src="save-submit-event.png" width="309" height="210" >}}
+![Save Event](./save-event/save-submit-event.png)
 
 #### Function {#save-function}
 
@@ -25,8 +25,8 @@ An event triggered when the save button of the inline editing is clicked on the 
 | :-- | :-- | :-- |
 | appId | Number | The App ID. |
 | recordId | Number | The Record ID. |
-| record | Object | A record object that holds data inputted by the user.<br>For more information, refer to the following article:<br>[Field Types](/docs/kintone/overview/field-types/) |
-| type | String | The event type.<br>Returns `app.record.index.edit.submit`. |
+| record | Object | A record object that holds data inputted by the user.<br />For more information, refer to the following article:<br />[Field Types](/docs/kintone/overview/field-types/) |
+| type | String | The event type.<br />Returns `app.record.index.edit.submit`. |
 
 #### Cancel Actions {#cancel-actions}
 

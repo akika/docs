@@ -24,9 +24,9 @@ aliases:
 
 ##### PC／モバイル
 
-<!-- textlint-disable prh -->
+
 kintone.getDomain()
-<!-- textlint-enable prh -->
+
 
 #### 引数{#parameters}
 
@@ -40,7 +40,7 @@ Promiseオブジェクトの解決時に次の値が取得できます。
 | プロパティ名 | 型 | 値と説明 |
 |:--|:--|:--|
 | subdomain  | 文字列 | サブドメイン名 |
-| baseDomain | 文字列 | ドメイン名<br>ご利用の環境に応じて以下のいずれかの値が返ります。<ul><li>`cybozu.com`</li><li>`cybozu.cn`</li><li>`kintone.com`</li></ul> |
+| baseDomain | 文字列 | ドメイン名<br />ご利用の環境に応じて以下のいずれかの値が返ります。<ul><li>`cybozu.com`</li><li>`cybozu.cn`</li><li>`kintone.com`</li></ul> |
 
 #### 利用できる画面{#available-pages}
 

@@ -10,14 +10,11 @@ aliases:
 
 Uninstalls a plug-in from the Kintone environment.
 
-{{< vtable >}}
 | Method | DELETE |
 | URL | https://{subdomain}.kintone.com/k/v1/plugin.json |
 | Authentication | [Password Authentication](/docs/common/authentication/#password-authentication), [Session Authentication](/docs/common/authentication/#session-authentication) |
 | Content-Type | application/json |
-{{< /vtable >}}
 
-{{ toc }}
 
 ### Permissions {#permissions}
 
@@ -32,7 +29,7 @@ Uninstalls a plug-in from the Kintone environment.
 ### Sample Request {#sample-request}
 
 #### [JavaScript using kintone.api()](/docs/kintone/js-api/api/kintone-rest-api-request/) {#javascript-using-kintone-api}
-<!-- eslint-disable strict -->
+
 ```js
 var body = {
   'id': 'djmhffjhfgmebgnmcggopedaofckljlj'

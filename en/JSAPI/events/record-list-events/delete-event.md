@@ -13,7 +13,7 @@ aliases:
 
 An event triggered when the "Delete" button is clicked on the pop-up that appears when the delete icon of a record is clicked on the record list.
 
-{{< image alt="Delete Submit Event" src="delete-submit-event.png" width="250" height="243" >}}
+![Delete Submit Event](./delete-event/delete-submit-event.png)
 
 #### Function {#function}
 

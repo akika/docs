@@ -13,7 +13,7 @@ aliases:
 
 An event triggered when a specified field value changes during an inline editing of a record on the record list.
 
-{{< image alt="Field Change Event" src="field-change-event.png" width="600" height="263" >}}
+![Field Change Event](./field-change-event/field-change-event.png)
 
 #### Function {#function}
 
@@ -40,13 +40,13 @@ An event triggered when a specified field value changes during an inline editing
 
 | PROPERTY | TYPE | DESCRIPTION |
 | :-- | :-- | :-- |
-| type | String | The event type.<br>Returns `app.record.index.edit.change.(fieldcode)`. |
+| type | String | The event type.<br />Returns `app.record.index.edit.change.(fieldcode)`. |
 | appId | Number | The App ID. |
-| record | Object | A record object including data inputted by the user at the time of the event.<br>For more information, refer to the following article:<br>[Field Types](/docs/kintone/overview/field-types/) |
+| record | Object | A record object including data inputted by the user at the time of the event.<br />For more information, refer to the following article:<br />[Field Types](/docs/kintone/overview/field-types/) |
 | recordId | Number | The Record ID. |
 | changes | Object | An object including data of changed fields and rows. |
-| changes.field | Object | An object of the changed field.<br>For more information, refer to the following article:<br>[Field Types](/docs/kintone/overview/field-types/) |
-| changes.row | null | Table row data.<br>Always returns `null` as table fields cannot be modified on the record list. |
+| changes.field | Object | An object of the changed field.<br />For more information, refer to the following article:<br />[Field Types](/docs/kintone/overview/field-types/) |
+| changes.row | null | Table row data.<br />Always returns `null` as table fields cannot be modified on the record list. |
 
 #### Available Event Object Actions {#available-event-object-actions}
 
