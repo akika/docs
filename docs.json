@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
+  "openapi": "openapi.yaml",
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
@@ -126,16 +127,8 @@
                 ]
               },
               {
-                "group": "Plugins",
-                "pages": [
-                  "en/REST/plugins/overview",
-                  "en/REST/plugins/get-plugins",
-                  "en/REST/plugins/get-required-plugins",
-                  "en/REST/plugins/add-plugin",
-                  "en/REST/plugins/update-plugin",
-                  "en/REST/plugins/delete-plugin",
-                  "en/REST/plugins/get-plugin-apps"
-                ]
+                "group": "REST API Reference",
+                "openapi": "openapi.yaml"
               }
             ]
           },
@@ -226,16 +219,8 @@
                 ]
               },
               {
-                "group": "プラグイン",
-                "pages": [
-                  "ja/REST/plugins/overview",
-                  "ja/REST/plugins/get-plugins",
-                  "ja/REST/plugins/get-required-plugins",
-                  "ja/REST/plugins/add-plugin",
-                  "ja/REST/plugins/update-plugin",
-                  "ja/REST/plugins/delete-plugin",
-                  "ja/REST/plugins/get-plugin-apps"
-                ]
+                "group": "REST API リファレンス",
+                "openapi": "openapi.yaml"
               }
             ]
           }
